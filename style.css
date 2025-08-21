@@ -1,0 +1,43 @@
+
+h1 {
+    color: #EAF0FF;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+h2 {
+    color:#9293cb;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    background-color: #eae2da;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+img {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+} 
+
+.profile-text {
+    flex: 1;
+    
+}
+
+.profile-photo {
+    width: 40%;
+    border-radius: 8px;
+}
+
+.heading-background {
+    background-color: #6667AB ;
+}
