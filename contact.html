@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Contact</title>
     <link rel="stylesheet" href="starter.css">
-    <link rel="stylesheet" href="style.css">
 </head>
-<div class="heading-background">
-<h1>Contact Information</h1>
-</div>
+<body>
+    <!--This is the section for my header-->
+<header>
+    <h1>Contact Information</h1>   
+</header>
 <nav>
     <div class="container">
             <ul>
@@ -18,22 +19,47 @@
                 <li><a href="worksamples.html">Work samples</a></li>
                 <li><a href="projects.html">Teaching projects</a></li>
                 <li><a href="contact.html">My contact</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="resources.html">Resources</a></li>
             <ul>
     </div>
 </nav>
-<body>
-<ol>
-    <li>Email - nadia.wang@outlook.com
-    <li>Phone - 0419302588
-    <li>Work Address - 74 Sherwood Rd, Merrylands NSW 2160</li>
-    </li>
-    </li>
-</ol>
-</body>
-
+<!--This is the main content area for my page-->
+<main>
+<section class="section">
+    <h2>Get in Touch</h2>
+    <form id="contact-form" action="#" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Your details</legend>
+            <!--Form text input for putting your name-->
+            <label for="name">Full Name</label>
+            <input id="name" name="name" type="text" placeholder="John Smith" required minlength="6">
+            <!--Form text for putting in your email-->
+            <label for="email">Email Address</label>
+            <input id="email" name="email" type="email" placeholder="name@example.com" required autocomplete="email">
+            <!--Form text fopr putting in a message-->
+            <label for="message">Message</label>
+            <textarea id="message" name="message" type="message" placeholder="How can i help?" required minlength="8"></textarea>
+            <!--honey pot antispam field-->
+            <input type="text" name="honey" tabindex="-1" aria-hidden="true" style="position:absolute;left:-9999px;">
+            <!--sumbit button for the inputed contact information-->
+            <button type="submit">Send</button>
+        </fieldset>
+    </form>
+</section>
+<!--This is the section to add my socials-->
+<section class="section" aria-labelledby="socials">
+    <h2 id="socials">Add Me On Socials</h2>
+    <ul>
+        <li><a href="https://au.linkedin.com/" rel="noopener">LinkedIn</a></li>
+    </ul>
+</section>
+</main>
+<!--this is the footer for my page-->
 <footer>
     <div class="container">
         <p> &copy; 2025 Nadia Wang. All Rights Reserved.</p>
     </div>
 </footer>
+</body>
 </html>

@@ -7,7 +7,11 @@
    Tip: Read the comments and tweak values as you go.
    ===================================================== */
 
+
 /* ---------- 1) CSS Reset / Base ----------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap');     /* google fonts*/
+
 *, *::before, *::after {
   box-sizing: border-box;   /* Include padding & border in total size for all elements + pseudo-elements */
 }
@@ -23,7 +27,7 @@ img {
 
 /* ---------- 2) Core Theme Tokens ----------- */
 :root {
-  --brand: rgb(28, 76, 150);        /* primary colour */
+  --brand: #284F4F;        /* primary colour */
   --brand-2: #f39c12;      /* accent colour */
   --bg: #ffffff;           /* page background */
   --head: #6667AB;         /* main header colour */
@@ -34,8 +38,8 @@ img {
   --shadow: 0 4px 12px rgba(0,0,0,0.08);    /* Subtle shadow for depth */
   --spacing: 16px;         /* base spacing unit */
   --maxw: 1100px;          /* content width */
-  --font-body: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;  /* Body font */
-  --font-head: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;   /* Headings font */
+  --font-body: "Cal Sans";  /* Body font */
+  --font-head: "Cal Sans"; /* Headings font */
 }
 
 /* ---------- 3) Page Defaults --------------- */
@@ -81,11 +85,12 @@ a:hover, a:focus {
 
 /* ---------- 6) Header / Nav ---------------- */
 header {
-  background-color: rgb(146, 168, 209,);                  /* Gradient background */
+  background-image: url(images/flowerbackground.jpg);                  /* Gradient background */
   color: white;                                           /* White text */
-  padding: 18px 0;                                          /* Vertical spacing */
+  padding: 30px;                                          /* Vertical spacing */
   box-shadow: var(--shadow);                                /* Subtle shadow for depth */
   margin-bottom: 0;                                         /* Removes gap under header */
+  font-family: var(--font-head);
 }
 header .container {
   width: min(100% - 2*var(--spacing), var(--maxw));   /* Responsive width */
@@ -94,14 +99,15 @@ header .container {
   gap: var(--spacing);                                /* Space between flex items */
   align-items: center;                                /* Vertically centers items */
   justify-content: space-between;                     /* Pushes items apart */
+  background-color: #de8888;
 }
 header h1 {
   width: min(100% - 2*var(--spacing), var(--maxw));   /* Responsive heading width */
   margin: 32px auto;                                  /* Centers heading */
-  color: var(--head);                                 /* Special header colour */
+  color:var(--brand) ;                                 /* Special header colour */
 }
 nav {
-  background-color: #92A8D1;             /* Dark grey background for nav bar */
+  background-color: #5a8484;             /* Dark grey background for nav bar */
   font-size: 0.95rem;             /* Slightly smaller font in navigation */
   width: 100%;                    /* Spans full width */
   margin: 32px auto;              /* Space above page content; no top gap */
@@ -204,7 +210,7 @@ tr:nth-child(even) {
   flex-wrap: wrap;                  /* Wraps to next line if needed */
   gap: 20px;                        /* Space between items */
   justify-content: space-between;   /* Space between items */
-  margin-top: 20px;                 /* Space above container */
+  margin-top: 20px;                /* Space above container */
 }
 .project-card {
   flex: 1 1 350px;                /* Responsive card width */
@@ -232,7 +238,7 @@ tr:nth-child(even) {
   gap: var(--spacing);                                            /* Space between grid items */
 }
 .card {
-  background-color: #DFCFBE;             /* White background */
+  background-color: #dfcfbe;             /* White background */
   border-radius: var(--radius);   /* Rounded corners */
   box-shadow: var(--shadow);      /* Soft shadow */
   overflow: hidden;               /* Hides overflowing content */
