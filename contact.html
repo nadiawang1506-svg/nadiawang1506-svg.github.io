@@ -1,67 +1,83 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Contact</title>
-    <link rel="stylesheet" href="starter.css">
-</head>
-<body>
-    <!--This is the section for my header-->
-<header>
-    <h1>Contact Information</h1>   
-</header>
-<!--this is the navigation menu setting-->
-<nav>
-    <div class="container">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="teachingphilosophy.html">Teaching Philosophy/Practice</a></li>
-                <li><a href="worksamples.html">Work samples</a></li>
-                <li><a href="projects.html">Teaching projects</a></li>
-                <li><a href="contact.html">My contact</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="resources.html">Resources</a></li>
-            <ul>
-    </div>
-</nav>
-<!--This is the main content area for my page-->
-<main>
-<section class="section">
-    <h2>Get in Touch</h2>
-    <form id="contact-form" action="https://formsubmit.co/5921ec96cec6941c06a22b4b048ea6c3" method="post" autocomplete="on">
-        <fieldset>
-            <legend>Your details</legend>
-            <!--Form text input for putting your name-->
-            <label for="name">Full Name</label>
-            <input id="name" name="name" type="text" placeholder="John Smith" required minlength="6">
-            <!--Form text for putting in your email-->
-            <label for="email">Email Address</label>
-            <input id="email" name="email" type="email" placeholder="name@example.com" required autocomplete="email">
-            <!--Form text fopr putting in a message-->
-            <label for="message">Message</label>
-            <textarea id="message" name="message" type="message" placeholder="How can i help?" required minlength="8"></textarea>
-            <!--honey pot antispam field-->
-            <input type="text" name="honey" tabindex="-1" aria-hidden="true" style="position:absolute;left:-9999px;">
-            <!--sumbit button for the inputed contact information-->
-            <button type="submit">Send</button>
-        </fieldset>
-    </form>
-</section>
-<!--This is the section to add my socials-->
-<section class="section" aria-labelledby="socials">
-    <h2 id="socials">Add Me On Socials</h2>
-    <ul>
-        <li><a href="https://au.linkedin.com/" rel="noopener">LinkedIn</a></li>
-    </ul>
-</section>
-</main>
-<!--this is the footer for my page-->
-<footer>
-    <div class="container">
-        <p> &copy; 2025 Nadia Wang. All Rights Reserved.</p>
-    </div>
-</footer>
-</body>
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Miniport by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+		<!-- Nav -->
+			<nav id="nav">
+				<ul class="container">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="worksamples.html">Work Samples</a></li>
+					<li><a href="unitsofwork.html">Units of Work</a></li>
+					<li><a href="teachingphilosophy.html">Teaching Philosophy</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		<!-- Home -->
+			<article id="Home" class="wrapper style1">
+				<div class="container">
+					<div class="row">
+						<div class="col-4 col-5-large col-12-medium">
+							<span class="image fit"><img src="images/photo edited.jpg" alt="" /></span>
+						</div>
+						<div class="col-8 col-7-large col-12-medium">
+							<header>
+								<h1><strong>Contact</strong></h1>
+							</header>
+						</div>
+					</div>
+				</div>
+			</article>
+
+	<!-- Contact -->
+			<article id="contact" class="wrapper style4">
+				<div class="container medium">
+					<header>
+						<h2 class="rounded-heading">Contact</h2>
+					</header>
+					<div class="row">
+						<div class="col-12">
+							<form method="post" action="#">
+								<div class="row">
+									<div class="col-6 col-12-small">
+										<input type="text" name="name" id="name" placeholder="Name" />
+									</div>
+									<div class="col-6 col-12-small">
+										<input type="text" name="email" id="email" placeholder="Email" />
+									</div>
+									<div class="col-12">
+										<input type="text" name="subject" id="subject" placeholder="Subject" />
+									</div>
+									<div class="col-12">
+										<textarea name="message" id="message" placeholder="Message"></textarea>
+									</div>
+									<div class="col-12">
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="alt"/></li>
+											<li><input type="reset" value="Clear Form" class="alt" /></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<footer>
+  						<p>© 2025 Nadia Wang. All rights reserved.</p>
+					</footer>
+			</article>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
