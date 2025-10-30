@@ -118,27 +118,31 @@
 					</header>
 					<div class="row">
 						<div class="col-12">
-							<form method="post" action="#">
-								<div class="row">
-									<div class="col-6 col-12-small">
-										<input type="text" name="name" id="name" placeholder="Name" />
-									</div>
-									<div class="col-6 col-12-small">
-										<input type="text" name="email" id="email" placeholder="Email" />
-									</div>
-									<div class="col-12">
-										<input type="text" name="subject" id="subject" placeholder="Subject" />
-									</div>
-									<div class="col-12">
-										<textarea name="message" id="message" placeholder="Message"></textarea>
-									</div>
-									<div class="col-12">
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="alt"/></li>
-											<li><input type="reset" value="Clear Form" class="alt" /></li>
-										</ul>
-									</div>
-								</div>
+							<form method="post" action="https://formsubmit.co/5921ec96cec6941c06a22b4b048ea6c3" autocomplete="on">
+								  <div class="row">
+    								<div class="col-6 col-12-small">
+      									<input type="text" name="name" id="name" placeholder="Name" required minlength="2"/>
+    								</div>
+
+    								<div class="col-6 col-12-small">
+      									<input type="email" name="email" id="email" placeholder="Email" required autocomplete="email"/>
+    								</div>
+
+    								<div class="col-12">
+      									<input type="text" name="subject" id="subject" placeholder="Subject" required/>
+    								</div>
+
+    								<div class="col-12">
+      									<textarea name="message" id="message" placeholder="Message" required minlength="5"></textarea>
+    								</div>
+
+    								<div class="col-12">
+      									<ul class="actions">
+        									<li><input type="submit" value="Send Message" class="alt"/></li>
+        									<li><input type="reset" value="Clear Form" class="alt" /></li>
+      									</ul>
+    								</div>
+  								</div>
 							</form>
 						</div>
 					</div>
